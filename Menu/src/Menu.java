@@ -58,5 +58,3 @@ public class Menu {
 		System.out.println("Goodbye, call again!");
 	}
 }
-
-//of course testing eclipse and git
