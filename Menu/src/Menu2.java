@@ -27,8 +27,8 @@ public class Menu2 {
 		int choice;
 		
 		// Menu data
-		int options[] = {1,2,3,0};
-		String menuItems[] = {"Next Americano","Spanish Latte","Get Espresso","Exit"};
+		int options[] = {1,2,3,4,5,0};
+		String menuItems[] = {"Spanish Latte","Next Fredo","Next Frappe","Get Americano","Get Espresso","","Exit"};
 
 		// Exit option
 		int EXIT = options[options.length-1];
@@ -63,6 +63,6 @@ public class Menu2 {
 		}
 
 		System.out.println("Goodbye, call again!");
-		
+
 	}
 }
