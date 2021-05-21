@@ -1,5 +1,5 @@
 # Desktop-KaraskivCoffeehouse
 Coffee Menu
 
-![image](https://user-images.githubusercontent.com/82354360/118852447-ffee2a80-b8fc-11eb-8988-5fe79edf0560.png)
+![image](https://user-images.githubusercontent.com/82354360/119132894-6ee69300-ba65-11eb-9799-acf0ce15b5f4.png)
 
