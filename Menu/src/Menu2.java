@@ -61,6 +61,8 @@ public class Menu2 {
 			// Get choice from user
 			choice = in.nextInt();
 		}
+
 		System.out.println("Goodbye, call again!");
+		
 	}
 }
