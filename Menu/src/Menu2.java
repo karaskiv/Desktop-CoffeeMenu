@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Menu2 {
 
-	public static void displayMenu(int opts[], String items[]) {
+	public static void displayMenu(int opts[], String items[], double pr[]) {
 		// Display menu
 		System.out.println("");
 		System.out.println(" KARASKIV COFFEEHOUSE");
@@ -11,7 +11,7 @@ public class Menu2 {
 		System.out.println("----------------------");
 		// Loop through options and items except the last
 		for(int i = 0; i < opts.length-1; i++) {
-			System.out.printf("%d. %s\n", opts[i], items[i]);
+			System.out.printf("%d. %s   \t%.1fk\n", opts[i], items[i], pr[i]);
 		}
 		System.out.println("----------------------");
 		// Print only the last option and item
@@ -29,12 +29,13 @@ public class Menu2 {
 		// Menu data
 		int options[] = {1,2,3,4,5,0};
 		String menuItems[] = {"Spanish Latte","Next Fredo","Next Frappe","Get Americano","Get Espresso","","Exit"};
+		double prices[] = {20, 17.5, 17.5, 15, 15, 0};
 
 		// Exit option
 		int EXIT = options[options.length-1];
 
 		// Display menu
-		displayMenu(options, menuItems);
+		displayMenu(options, menuItems, prices);
 		
 		// Setup scanner
 		Scanner in = new Scanner(System.in);
@@ -54,9 +55,15 @@ public class Menu2 {
 			else if (choice == options[2]) {
 				System.out.println(menuItems[2] + " coffee!");
 			}
+			else if (choice == options[3]) {
+				System.out.println(menuItems[3] + " coffee!");
+			}
+			else if (choice == options[4]) {
+				System.out.println(menuItems[4] + " coffee!");
+			}
 			
 			// Display menu
-			displayMenu(options, menuItems);
+			displayMenu(options, menuItems, prices);
 			
 			// Get choice from user
 			choice = in.nextInt();
