@@ -17,7 +17,7 @@ public class Menu3 {
 		// Print only the last option and item
 		System.out.println(opts[opts.length-1] + ". " + items[items.length-1]);
 		System.out.println("======================");
-		System.out.print("Enter choice: ");
+		
 	}
 
 	public static void main(String[] args) {
@@ -32,6 +32,9 @@ public class Menu3 {
 		// Exit option
 		int EXIT = options[options.length-1];
 
+		// Create a keyboard object for input validation
+		Keyboard key = new Keyboard();
+
 		// Display menu
 		displayMenu(options, menuItems, price);
 		
@@ -39,7 +42,7 @@ public class Menu3 {
 		Scanner in = new Scanner(System.in);
 		
 		// Get choice from user
-		choice = in.nextInt();
+		choice = key.readInteger("Enter choice: ", "Error: invalid input.", 1, EXIT);
 		
 		// Menu loop
 		while(choice != EXIT) {
@@ -64,7 +67,7 @@ public class Menu3 {
 			displayMenu(options, menuItems, price);
 			
 			// Get choice from user
-			choice = in.nextInt();
+			choice = key.readInteger("Enter choice: ", "Error: invalid input.", 1, EXIT);
 		}
 
 		System.out.println("Thank you, have a good day!");
